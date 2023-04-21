@@ -35,7 +35,7 @@
 <a href="Admindash.html" class="logo">
 <img src="assets/img/logo.png" alt="">
 </a>
-<a href="index.html" class="logo-small">
+<a href="Admindash.html" class="logo-small">
 <img src="assets/img/logo-small.png" alt="">
 </a>
 <a id="toggle_btn" href="javascript:void(0);">
@@ -206,7 +206,10 @@
         </ul>
     </li>
     <li>
-        <a href="addcategory.html"><i data-feather="layers"></i><span>Item Category</span></a>
+        <a href="categorylist.html"><i data-feather="list"></i><span>Category List</span></a>
+    </li>
+    <li>
+        <a href="addcategory.html"><i data-feather="layers"></i><span>Add Category</span></a>
     </li>
     <li>
         <a href="orders.html"><img src="assets/img/icons/sales1.svg" alt="img"><span> Order List</span></a>
@@ -280,7 +283,7 @@
 
             <!--recently added products-->
                   <div class="row">
-                    <div class="col-lg-7 col-sm-12 col-12 d-flex">
+                    <!-- <div class="col-lg-7 col-sm-12 col-12 d-flex">
                     <div class="card flex-fill">
                     <div class="card-header pb-0 d-flex justify-content-between align-items-center">
                     <h5 class="card-title mb-0">Purchase & Used</h5>
@@ -315,83 +318,111 @@
                     <div id="sales_charts"></div>
                     </div>
                     </div>
+                    </div> -->
+
+
+
+                    <div class="col-lg-5 col-md-6 col-sm-12 ">
+                        <div class="card">
+                        <div class="card-header">
+                        <h5 class="card-title">Maximum Product Count</h5>
+                        </div>
+                        <div class="card-body">
+                        <div id="radial-chart" class="chart-set"></div>
+                        </div>
+                        </div>
                     </div>
 
-                    <div class="col-lg-5 col-sm-12 col-12 d-flex">
-                    <div class="card flex-fill">
-                    <div class="card-header pb-0 d-flex justify-content-between align-items-center">
-                    <h4 class="card-title mb-0">Recently Added Products</h4>
-                    <div class="dropdown">
-                    <a href="javascript:void(0);" data-bs-toggle="dropdown" aria-expanded="false" class="dropset">
-                    <i class="fa fa-ellipsis-v"></i>
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <li>
-                    <a href="productlist.html" class="dropdown-item">Product List</a>
-                    </li>
-                    <li>
-                    <a href="addproduct.html" class="dropdown-item">Product Add</a>
-                    </li>
-                    </ul>
-                    </div>
-                    </div>
-                    <div class="card-body">
-                    <div class="table-responsive dataview">
-                    <table class="table datatable ">
-                    <thead>
-                    <tr>
-                    <th>Sno</th>
-                    <th>Products</th>
-                    <th>Price</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                    <td>1</td>
-                    <td class="productimgname">
-                    <a href="productlist.html" class="product-img">
-                    <img src="assets/img/product/colin.png" alt="product">
-                    </a>
-                    <a href="productlist.html">Colin</a>
-                    </td>
-                    <td>120 Nu</td>
-                    </tr>
-                    <tr>
-                    <td>2</td>
-                    <td class="productimgname">
-                    <a href="productlist.html" class="product-img">
-                    <img src="assets/img/product/glue.png" alt="product">
-                    </a>
-                    <a href="productlist.html">Glue</a>
-                    </td>
-                    <td>100 Nu</td>
-                    </tr>
-                    <tr>
-                    <td>3</td>
-                    <td class="productimgname">
-                    <a href="productlist.html" class="product-img">
-                    <img src="assets/img/product/markerred.png" alt="product">
-                    </a>
-                    <a href="productlist.html">Marker Red</a>
-                    </td>
-                    <td>250 Nu</td>
-                    </tr>
-                    <tr>
-                    <td>4</td>
-                    <td class="productimgname">
-                    <a href="productlist.html" class="product-img">
-                    <img src="assets/img/product/file.png" alt="product">
-                    </a>
-                    <a href="productlist.html">File</a>
-                    </td>
-                    <td>320 Nu</td>
-                    </tr>
-                    </tbody>
-                    </table>
-                    </div>
-                    </div>
-                    </div>
-                    </div>
+                    <div class="col-lg-7 col-sm-12 col-m-6 d-flex">
+                        <div class="card flex-fill">
+                        <div class="card-header pb-0 d-flex justify-content-between align-items-center">
+                        <h4 class="card-title mb-0">Recently Added Products</h4>
+                        <div class="dropdown">
+                        <a href="javascript:void(0);" data-bs-toggle="dropdown" aria-expanded="false" class="dropset">
+                        <i class="fa fa-ellipsis-v"></i>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <li>
+                        <a href="productlist.html" class="dropdown-item">Product List</a>
+                        </li>
+                        <li>
+                        <a href="addproduct.html" class="dropdown-item">Product Add</a>
+                        </li>
+                        </ul>
+                        </div>
+                        </div>
+                        <div class="card-body">
+                        <div class="table-responsive dataview">
+                        <table class="table datatable ">
+                        <thead>
+                        <tr>
+                        <th>Sno</th>
+                        <th>Products</th>
+                        <th>Price</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                        <td>1</td>
+                        <td class="productimgname">
+                        <a href="productlist.html" class="product-img">
+                        <img src="assets/img/product/colin.png" alt="product">
+                        </a>
+                        <a href="productlist.html">Colin</a>
+                        </td>
+                        <td>120 Nu</td>
+                        </tr>
+                        <tr>
+                        <td>2</td>
+                        <td class="productimgname">
+                        <a href="productlist.html" class="product-img">
+                        <img src="assets/img/product/glue.png" alt="product">
+                        </a>
+                        <a href="productlist.html">Glue</a>
+                        </td>
+                        <td>100 Nu</td>
+                        </tr>
+                        <tr>
+                        <td>3</td>
+                        <td class="productimgname">
+                        <a href="productlist.html" class="product-img">
+                        <img src="assets/img/product/markerred.png" alt="product">
+                        </a>
+                        <a href="productlist.html">Marker Red</a>
+                        </td>
+                        <td>250 Nu</td>
+                        </tr>
+                        <tr>
+                        <td>4</td>
+                        <td class="productimgname">
+                        <a href="productlist.html" class="product-img">
+                        <img src="assets/img/product/file.png" alt="product">
+                        </a>
+                        <a href="productlist.html">File</a>
+                        </td>
+                        <td>320 Nu</td>
+                        </tr>
+                        </tbody>
+                        </table>
+                        </div>
+                        </div>
+                        </div>
+                        </div>
+
+                        <div class="col-lg-12">
+                            <div class="card">
+                            <div class="card-header">
+                            <h5 class="card-title">Most Requested Products</h5>
+                            </div>
+                            <div class="card-body">
+                            <div id="s-bar" class="chart-set"></div>
+                            </div>
+                            </div>
+                        </div>
+
+
+
+
                   </div>
 
             <!--recently added products end-->
